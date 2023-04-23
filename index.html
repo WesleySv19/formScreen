@@ -4,146 +4,71 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
         <title>Login-Screen-Project</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            body {
-                background: linear-gradient(90deg, #90EE90, #000000);
-                min-height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            }
-
-            .box-content {
-                display: flex;
-                color: #fff;
-                padding: 1em;
-                border-radius: 3%;
-                background-color: rgba(0, 0, 0, 0.7);
-            }
-
-            fieldset {
-                padding: 0.5em;
-                border: 3px double #90EE90;
-                border-radius: 3%;
-            }
-
-            fieldset legend {
-                text-align: center;
-                font-size: 1.5em;
-            }
-
-            .inputBox {
-                position: relative;
-                padding: 1em;
-            }
-
-            .inputUser {
-                color: #fff;
-                background: none;
-                border: none;
-                outline: none;
-                border-bottom: 1px solid #fff;
-                font-size: 1em;
-                letter-spacing: 1px;
-                width: 100%;
-
-            }
-
-            .labelInput {
-                position: absolute;
-                top: 0;
-                left: 0;
-                pointer-events: none;
-                transition: 0.5s;
-            }
-
-            .inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{
-                top: -10px;
-                font-size: 0.7em;
-                color: #90EE90;
-                border-bottom: 2px;
-            }
-
-            #dateOfBirth {
-                border: none;
-                padding: 0.5em;
-                outline: none;
-                font-size: 1em;
-                border-radius: 10px;
-            }
-
-            #btnSubmit {
-                width: 100%;
-                padding: 1em;
-                background: linear-gradient(to right, #fff, #000000);
-                color: #fff;
-                border-radius: 10px;
-                font-size: 1em;
-                cursor: pointer;
-            }
-
-            #btnSubmit:hover {
-                background: linear-gradient(90deg, #90EE90, #000000);
-            }
-        </style>
     </head>
     <body>
-        <div class="box-content">
-            <fieldset>
-                <legend>Formulário</legend>
 
-                <div class="inputBox">
-                    <input type="text" name="name" id="name" class="inputUser" required>
-                    <label for="name" class="labelInput">Nome completo:</label>
+        <div class="content">
+            <div class="box-content-login1">
+               <h1><strong>Cadastrar</strong></h1>
+               <img src="img/icon.png" alt="">
+            </div>
+
+            <div class="box-content-login2">
+                <div class="login">
+                    <fieldset>
+                        <legend>Formulário</legend>
+        
+                        <div class="inputBox">
+                            <input type="text" name="name" id="name" class="inputUser" required>
+                            <label for="name" class="labelInput">Nome completo:</label>
+                        </div>
+        
+                        <div class="inputBox">
+                            <input type="text" name="email" id="email" class="inputUser" required>
+                            <label for="email" class="labelInput">E-mail:</label>
+                        </div>
+        
+                        <div class="inputBox">
+                            <input type="tel" name="tell" id="tell" class="inputUser" required>
+                            <label for="tell" class="labelInput">Telefone:</label>
+                        </div>
+        
+                        <h4>Sexo:</h4>
+                        <input type="radio" id="feminine" name="gender" value="feminine">
+                        <label for="feminine">Feminino</label>
+                        <br>
+                        <input type="radio" id="masculine" name="gender" value="masculine">
+                        <label for="masculine">Masculino</label>
+        
+                        <div class="inputBox">
+                            <label for="dateOfBirth"><strong>Data de nascimento:</strong></label>
+                            <input type="date" name="date" id="dateOfBirth" id="dateOfBirth" required>
+                        </div>
+        
+                        <div class="inputBox">
+                            <input type="text" name="city" id="city" class="inputUser" required>
+                            <label for="city" class="labelInput">Cidade:</label>
+                        </div>
+        
+                        <div class="inputBox">
+                            <input type="email" name="state" id="state" class="inputUser" required>
+                            <label for="email" class="labelInput">Estado:</label>
+                        </div>
+        
+                        <div class="inputBox">
+                            <input type="tel" name="address" id="address" class="inputUser" required>
+                            <label for="address" class="labelInput">Endereço:</label>
+                        </div>
+        
+                        <input type="submit" id="btnSubmit">
+        
+                    </fieldset>
                 </div>
-
-                <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser" required>
-                    <label for="email" class="labelInput">E-mail:</label>
-                </div>
-
-                <div class="inputBox">
-                    <input type="tel" name="tell" id="tell" class="inputUser" required>
-                    <label for="tell" class="labelInput">Telefone:</label>
-                </div>
-
-                <h4>Sexo:</h4>
-                <input type="radio" id="feminine" name="gender" value="feminine">
-                <label for="feminine">Feminino</label>
-                <br>
-                <input type="radio" id="masculine" name="gender" value="masculine">
-                <label for="masculine">Masculino</label>
-
-                <div class="inputBox">
-                    <label for="dateOfBirth"><strong>Data de nascimento:</strong></label>
-                    <input type="date" name="date" id="dateOfBirth" id="dateOfBirth" required>
-                </div>
-
-                <div class="inputBox">
-                    <input type="text" name="city" id="city" class="inputUser" required>
-                    <label for="city" class="labelInput">Cidade:</label>
-                </div>
-
-                <div class="inputBox">
-                    <input type="email" name="state" id="state" class="inputUser" required>
-                    <label for="email" class="labelInput">Estado:</label>
-                </div>
-
-                <div class="inputBox">
-                    <input type="tel" name="address" id="address" class="inputUser" required>
-                    <label for="address" class="labelInput">Endereço:</label>
-                </div>
-
-                <input type="submit" id="btnSubmit">
-
-            </fieldset>
+            </div>
         </div>
+
+
     </body>
 </html>
