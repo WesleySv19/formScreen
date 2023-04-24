@@ -1,4 +1,4 @@
-# Projeto: Formoulário
+# Projeto: Formulário
 
 ![](assets/projectLoginScreen.png)
 ## Ideia inicial na criação do projeto
