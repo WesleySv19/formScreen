@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+    <html lang="pt-br">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,68 +8,67 @@
         <link rel="stylesheet" href="css/style.css">
         <title>Login-Screen-Project</title>
     </head>
+
     <body>
 
         <div class="content">
             <div class="box-content-login1">
-               <h1><strong>Cadastrar</strong></h1>
-               <img src="img/icon.png" alt="">
+                <h1><strong>Cadastrar</strong></h1>
+                <img src="img/icon.png" alt="">
             </div>
 
             <div class="box-content-login2">
-                <div class="login">
-                    <fieldset>
-                        <legend>Formulário</legend>
-        
-                        <div class="inputBox">
-                            <input type="text" name="name" id="name" class="inputUser" required>
-                            <label for="name" class="labelInput">Nome completo:</label>
-                        </div>
-        
-                        <div class="inputBox">
-                            <input type="text" name="email" id="email" class="inputUser" required>
-                            <label for="email" class="labelInput">E-mail:</label>
-                        </div>
-        
-                        <div class="inputBox">
-                            <input type="tel" name="tell" id="tell" class="inputUser" required>
-                            <label for="tell" class="labelInput">Telefone:</label>
-                        </div>
-        
-                        <h4>Sexo:</h4>
-                        <input type="radio" id="feminine" name="gender" value="feminine">
-                        <label for="feminine">Feminino</label>
-                        <br>
-                        <input type="radio" id="masculine" name="gender" value="masculine">
-                        <label for="masculine">Masculino</label>
-        
-                        <div class="inputBox">
-                            <label for="dateOfBirth"><strong>Data de nascimento:</strong></label>
-                            <input type="date" name="date" id="dateOfBirth" id="dateOfBirth" required>
-                        </div>
-        
-                        <div class="inputBox">
-                            <input type="text" name="city" id="city" class="inputUser" required>
-                            <label for="city" class="labelInput">Cidade:</label>
-                        </div>
-        
-                        <div class="inputBox">
-                            <input type="email" name="state" id="state" class="inputUser" required>
-                            <label for="email" class="labelInput">Estado:</label>
-                        </div>
-        
-                        <div class="inputBox">
-                            <input type="tel" name="address" id="address" class="inputUser" required>
-                            <label for="address" class="labelInput">Endereço:</label>
-                        </div>
-        
-                        <input type="submit" id="btnSubmit">
-        
-                    </fieldset>
+                <form action="" autocomplete="off">
+                    <div class="login">
+                        <fieldset>
+                            <legend>Formulário</legend>
+
+                            <div class="inputBox">
+                                <input type="text" name="name" id="name" class="inputUser" required>
+                                <label for="name" class="labelInput">Nome completo:</label>
+                            </div>
+
+                            <div class="inputBox">
+                                <input type="text" name="email" id="email" class="inputUser" required>
+                                <label for="email" class="labelInput">E-mail:</label>
+                            </div>
+
+                            <div class="inputBox">
+                                <input type="tel" name="tell" id="tell" class="inputUser" required>
+                                <label for="tell" class="labelInput">Telefone:</label>
+                            </div>
+
+                            <h4>Sexo:</h4>
+                            <input type="radio" id="feminine" name="gender" value="feminine">
+                            <label for="feminine">Feminino</label>
+                            <br>
+                            <input type="radio" id="masculine" name="gender" value="masculine">
+                            <label for="masculine">Masculino</label>
+
+                            <div class="inputBox">
+                                <label for="dateOfBirth"><strong>Data de nascimento:</strong></label>
+                                <input type="date" name="date" id="dateOfBirth" id="dateOfBirth" required>
+                            </div>
+
+                            <div class="inputBox">
+                                <input type="text" name="city" id="city" class="inputUser" required>
+                                <label for="city" class="labelInput">Cidade:</label>
+                            </div>
+
+                            <div class="inputBox">
+                                <input type="email" name="state" id="state" class="inputUser" required>
+                                <label for="email" class="labelInput">Estado:</label>
+                            </div>
+
+                            <div class="inputBox">
+                                <input type="tel" name="address" id="address" class="inputUser" required>
+                                <label for="address" class="labelInput">Endereço:</label>
+                            </div>
+                            <input type="submit" id="btnSubmit">
+                        </fieldset>
+                    </div>  
                 </div>
-            </div>
+            </form>
         </div>
-
-
     </body>
 </html>
