@@ -30,7 +30,6 @@ h1 {
     cursor: pointer;
 }
 
-
 .box-content-login1 {
     display: flex;
     align-items: center;
@@ -147,10 +146,6 @@ fieldset legend {
 
     .box-content-login1 {
         margin-right: 0;
-    }
-
-    fieldset {
-        
     }
 
     #imgRegister {
