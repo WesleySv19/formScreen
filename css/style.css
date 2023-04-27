@@ -14,10 +14,8 @@ body {
     display: flex;
     color: #fff;
     width: 100%;
-    margin: 2em 5em 3em;
     box-shadow: 10px 10px 20px #000;
     padding: 3em;
-    border-radius: 10px;
     background: linear-gradient(90deg, #90EE90, #3d3d3d);
     
 }
@@ -27,6 +25,11 @@ h1 {
     font-size: 3em;
     border-bottom: 3px double #fff;
 }
+
+#imgRegister {
+    cursor: pointer;
+}
+
 
 .box-content-login1 {
     display: flex;
@@ -126,4 +129,52 @@ fieldset legend {
 
 #btnSubmit:hover {
     background: linear-gradient(90deg, #90EE90, #000000);
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 576px) {
+    .content {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .box-content-login1 {
+        margin-right: 0;
+    }
+
+    fieldset {
+        
+    }
+
+    #imgRegister {
+        height: 4.5em;
+    }
+
+    .box-content-login2 {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .content {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .box-content-login1 {
+        margin-right: 0;
+        height: 1em;
+    }
+
+    .box-content-login2 {
+        margin-left: 0;
+    }
 }

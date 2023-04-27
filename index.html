@@ -14,7 +14,7 @@
         <div class="content">
             <div class="box-content-login1">
                 <h1><strong>Cadastrar</strong></h1>
-                <img src="img/icon.png" alt="">
+                <img id="imgRegister" src="img/icon.png" alt="">
             </div>
 
             <div class="box-content-login2">
@@ -47,7 +47,7 @@
 
                             <div class="inputBox">
                                 <label for="dateOfBirth"><strong>Data de nascimento:</strong></label>
-                                <input type="date" name="date" id="dateOfBirth" id="dateOfBirth" required>
+                                <input type="date" name="date" id="dateOfBirth" required>
                             </div>
 
                             <div class="inputBox">
@@ -70,5 +70,20 @@
                 </div>
             </form>
         </div>
+
+        <script>
+            
+            const redirect = document.getElementById('imgRegister');
+            const inputFocus = document.getElementsByClassName('inputUser');
+    
+            redirect.addEventListener('click', function() {
+                for(let i = 0; i < inputFocus.length; i++) {
+                if(inputFocus[i].value === '') {
+                    inputFocus[i].focus();
+                    return; // Para o loop quando o primeiro campo é encontrado.
+                }
+            }
+        })
+        </script>
     </body>
 </html>
